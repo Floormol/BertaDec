@@ -4,70 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Link de mi css -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>BDP - Nuestros servicios</title>
 </head>
 
 <body>
-    <header class="header">
-        <img class="header__logo" src="../img/bdp.jpg" alt="logo">
-        <h1 class="header__nombre"> Berta Deco Party</h1> 
-        <nav class="header__nav">
-            <ul>
-                <li  class="hader__nav--botones1"> 
-                    <a class="hader__nav--botones2" href="../index.html">
-                        <h3>Inicio</h3>
-                    </a>
-                </li>
-                <li  class="hader__nav--botones1"> 
-                    <a class="hader__nav--botones2" href="nuestrosservicios.html">
-                        <h3>Nuestros servicios</h3>
-                    </a>
-                    <ul class="header__nav--submenu">
-                        <li> Salón </li>
-                        <li> Decos infantiles </li>
-                        <li> Decos para 15 años </li>
-                        <li> Decos para casamiento </li>
-                        <li> Alquiler de Candy bar </li>
+    <div class="container-fluid">
+        <header class="bg-info">
+            <nav class="navbar navbar-expand-lg bg-info row">
+                <div class="container-fluid">
+                  <a class="navbar-brand fs-1" href="../index.html">Berta Deco Party</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav fst-italic fs-4">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="nuestrosservicios.html">Nuestros servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="galeriadeimagenes.html">Galería de imágenes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="quienessomos.html">Quienes somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                      </li>
                     </ul>
-                </li>
-                <li  class="hader__nav--botones1"> 
-                   <a class="hader__nav--botones2" href="galeriadeimagenes.html">
-                    <h3>Galería de imágenes</h3>
-                   </a> 
-                </li>
-                <li  class="hader__nav--botones1"> 
-                    <a class="hader__nav--botones2" href="quienessomos.html">
-                        <h3>Quienes somos</h3>
-                    </a>
-                </li>
-                <li  class="hader__nav--botones1"> 
-                    <a class="hader__nav--botones2" href="contacto.html">
-                        <h3>Contacto</h3>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <div class="row">
+                <div class="card col p-4 m-5" style="width: 18rem;">
+                    <img src="../img/gdi1.jpg" class="imagen de decoracion" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Servicio de decoración de mesa para casamientos.</p>
+                    </div>
+                  </div>
+                <div class="card col p-4 m-5" style="width: 18rem;">
+                    <img src="../img/gdi2.jpg" class="card-img-top" alt="Decoracion de Barbie">
+                    <div class="card-body">
+                      <p class="card-text">Decoración de mesa principal para niños.</p>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="card col p-4 m-5" style="width: 18rem;">
+                    <img src="../img/gdi4.jpg" class="card-img-top" alt="foto de salón">
+                    <div class="card-body">
+                      <p class="card-text">Alquiler de Salón</p>
+                    </div>
+                 </div>
+                <div class="card col p-4 m-5" style="width: 18rem;">
+                    <img src="../img/inic.jpg" class="card-img-top" alt="foto candy bar">
+                    <div class="card-body">
+                      <p class="card-text">Alquiler de Candy Bar.</p>
+                    </div>  
+                </div>
+            </div>
+        </main>
+        <footer class="bg-info d-flex justify-content-center">
+            <p class="fst-italic px-2 pt-1">Facebook</p>
+            <p class="fst-italic px-2 pt-1">Whatsapp</p>
+            <p class="fst-italic px-2 pt-1">Instagram</p>
+            <p class="fst-italic px-2 pt-1">Messenger</p>
+        </footer>
+    </div>
 
-    <footer class="footer">
-        <h2 class="footer__seguinos">Seguinos en nuestras redes sociales</h2>
-        <div class="footer__redes">
-         <a class="footer__redes" href="https://web.whatsapp.com" target="_blank">
-             WhatsApp
-         </a>
-        </div>
-        <div class="footer__redes">
-         <a class="footer__redes" href="https://www.instagram.com" target="_blank">
-             Instagram
-         </a>
-        </div>
-        <div class="footer__redes">
-         <a class="footer__redes" href="https://m.facebook.com" target="_blank">
-             Facebook
-         </a>
-        </div>
-     </footer>
-    
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
