@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet">
+    <!-- link Bootstrap -->
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- link CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- iconos footer -->
     <script src="https://kit.fontawesome.com/994041f941.js" crossorigin="anonymous"></script>
@@ -16,89 +20,113 @@
 <body>
     <div class="contenedor">
         <header class="header">
-            <h1 class="header__nombre"> Berta Deco Party</h1> 
-            <nav class="header__nav">
-                <ul>
-                    <li  class="hader__nav--botones1"> 
-                        <a class="hader__nav--botones2" href="">
-                            <h3>Inicio</h3>
-                        </a>
-                    </li>
-                    <li  class="hader__nav--botones1"> 
-                        <a class="hader__nav--botones2" href="pages/nuestrosservicios.html">
-                            <h3>Nuestros servicios</h3>
-                        </a>
-                        <ul class="header__nav--submenu">
-                            <li> Salón </li>
-                            <li> Decos infantiles </li>
-                            <li> Decos para 15 años </li>
-                            <li> Decos para casamiento </li>
-                            <li> Alquiler de Candy bar </li>
-                        </ul>
-                    </li>
-                    <li  class="hader__nav--botones1"> 
-                       <a class="hader__nav--botones2" href="pages/galeriadeimagenes.html">
-                        <h3>Galería de imágenes</h3>
-                       </a> 
-                    </li>
-                    <li  class="hader__nav--botones1"> 
-                        <a class="hader__nav--botones2" href="pages/quienessomos.html">
-                            <h3>Quienes somos</h3>
-                        </a>
-                    </li>
-                    <li  class="hader__nav--botones1"> 
-                        <a class="hader__nav--botones2" href="pages/contacto.html">
-                            <h3>Contacto</h3>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <h1 class="header__nombre"> Berta Deco Party</h1>
+            <nav class="navbar navbar-expand-lg ms-auto">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/nuestrosservicios.html">Nuestros servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="pages/galeriadeimagenes.html">Galería de imágenes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="pages/quienessomos.html">Quienes somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="pages/contacto.html">Contacto</a>
+                      </li>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
        
-        <main class="inicio">
-            <div>
-                <p class="inicio__parrafo"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quidem non nesciunt, libero quis vitae, suscipit pariatur, voluptatum aspernatur necessitatibus vero cumque error officia repellat eaque illum ducimus quo ea!</p>
-            </div>
-            <div>
-                <img class="inicio__imagen" src="img/inic.jpg" alt="imagen">
-            </div>
-        </main>
+        <div class="container-fluid">
+            <main class="inicio row">
+                <div class="col-sm-12 col-xl-4 p-5 d-flex align-items-center">
+                    <p class="inicio__parrafo "> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quidem non nesciunt, libero quis vitae, suscipit pariatur, voluptatum aspernatur necessitatibus vero cumque error officia repellat eaque illum ducimus quo ea!</p>
+                </div>
+                <div class="col-sm-12 col-xl-8 p-5 ">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/carrusel1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/carrusel2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/carrusel3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </main>
+        </div>
 
-        <aside class="publicidad__1">
-             <img class="publicidad__1--1" src="img/publi1.jpg" alt="publicidad de fanta">
-        </aside>
-    
-        <aside class="publicidad__2">
-            <img class="publicidad__2--2" src="img/publi2.webp" alt="publicidad de lays">
-        </aside>
-    
-        <aside class="publicidad__3">
-            <img class="publicidad__3--3" src="img/publi3.jpg" alt="publicidad de lays">
-        </aside>
+        <div class="row">
+            <aside class="publicidad__1 col-sm-12 col-xl-4 d-flex justify-content-center">
+                <img class="publicidad__1--1" src="img/publi1.jpg" alt="publicidad de fanta">
+           </aside>
+       
+           <aside class="publicidad__2 col-sm-12 col-xl-4 d-flex justify-content-center">
+               <img class="publicidad__2--2" src="img/publi2.webp" alt="publicidad de lays">
+           </aside>
+       
+           <aside class="publicidad__3 col-sm-12 col-xl-4 d-flex justify-content-center">
+               <img class="publicidad__3--3" src="img/publi3.jpg" alt="publicidad de lays">
+           </aside>
+        </div>
 
     
        <footer class="footer">
-           <div class="footer__redes">
-            <a class="footer__redes" href="https://web.whatsapp.com" target="_blank">
+           <div class="footer__redes--wp" id="green">
+            <a class="footer__redes--wp" href="https://web.whatsapp.com" target="_blank">
                 <i class="fab fa-whatsapp"></i>
             </a>
            </div>
-           <div class="footer__redes">
-            <a class="footer__redes" href="https://www.instagram.com" target="_blank">
+           <div class="footer__redes--insta">
+            <a class="footer__redes--insta" href="https://www.instagram.com" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
            </div>
-           <div class="footer__redes">
-            <a class="footer__redes" href="https://m.facebook.com" target="_blank">
+           <div class="footer__redes--face">
+            <a class="footer__redes--face" href="https://m.facebook.com" target="_blank">
                 <i class="fab fa-facebook-square"></i>
             </a>
            </div>
-           <div class="footer__redes">
-            <a class="footer__redes" href="https://m.facebook.com" target="_blank">
+           <div class="footer__redes--messe">
+            <a class="footer__redes--messe" href="https://m.facebook.com" target="_blank">
                 <i class="fab fa-facebook-messenger"></i>
             </a>
            </div>
         </footer>
     </div>
+    <!-- Java -->
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

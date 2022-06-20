@@ -10,109 +10,93 @@
 body{
     background: linear-gradient(to right, #f0d3d1, white);
 }
-.contenedor{
-    display: grid;
-    grid-template-areas: "header header header"
-                         "main main main"
-                         "publi1 publi2 publi3"
-                         "footer footer footer";                                        
-}
+
 .header{
     background-color: #f3b6b0;
     display: flex;
     padding-right: 15px;
-    grid-area: header;
 }
 .header__nombre{
     color: black;
     text-align: center;
-    font-size: 80px;
+    font-size: 5rem;
     font-family: 'Waterfall', cursive;
     font-weight: 600;
     display: inline;
     margin: 20px 50px;
-
 }
-.header__nav{
-    margin-left: auto;
-    display: flex;
-    align-items: flex-end;
+body div header nav{
+    font-size: 1.3rem;
 }
-.hader__nav--botones1{
-    list-style: none;
-    font-size: 15px;
-    display: inline-block;
-    padding: 7px;
-    margin: 20px 5px;
+body div header nav div ul li:hover{
+    transform: translateY(2px);
     background-color: #eae1ce;
-    border: 1px solid #d787e7;
-    position: relative;
-}
-.header__nav ul li:hover > ul{
-    display: block;
-}
-.hader__nav--botones2{
-    text-decoration: none;
-    color: black;
-}
-.header__nav--submenu{
-    list-style: none;
-    display: none;
-    position: absolute;
-    padding-top: 10px
-
-}
-.header__nav--submenu li{
-    margin 2px;
-    font-size: 15px;
-    padding: 1px;
 }
 
 .footer{
     background-color: #eb7375;
-    grid-area: footer;
     display: flex;
     justify-content: center;
 }
 .footer__redes{
     color: #eae1ce;
-    margin: 10px;
-    font-size: 40px;
+    font-size: 2.7rem;
     margin: 35px 10px;
 }
 .footer__redes:hover{
     transform: scale(1.4);
     transition: 1s;
+    color: #eae1ce;
+}
+.footer__redes--wp{
+    color: #eae1ce;
+    font-size: 2.7rem;
+    margin: 35px 10px;
+}
+.footer__redes--wp:hover{
+    transform: scale(1.4);
+    transition: 1s;
+    color: rgb(32, 133, 32);
+}
+.footer__redes--insta{
+    color: #eae1ce;
+    font-size: 2.7rem;
+    margin: 35px 10px;
+}
+.footer__redes--insta:hover{
+    transform: scale(1.4);
+    transition: 1s;
+    background: -webkit-linear-gradient(rgb(170, 53, 224), rgb(235, 213, 23));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer__redes--face{
+    color: #eae1ce;
+    font-size: 2.7rem;
+    margin: 35px 10px;
+}
+.footer__redes--face:hover{
+    transform: scale(1.4);
+    transition: 1s;
+    color: rgb(31, 84, 230);
+}
+.footer__redes--messe{
+    color: #eae1ce;
+    font-size: 2.7rem;
+    margin: 35px 10px;
+}
+.footer__redes--messe:hover{
+    transform: scale(1.4);
+    transition: 1s;
+    color: rgb(30, 57, 133);
 }
 
 /* Inicio */
-.inicio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: main;
-}
 .inicio__parrafo{
-    margin: 90px;
     text-align: center;
     font-family: 'Libre Baskerville', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
-}
-.inicio__imagen{
-    margin: 40px 60px;
-}
-.publicidad{
-    display: flex;
-}
-.publicidad__1{
-    grid-area: publi1;
-}
-.publicidad__2{
-    grid-area: publi2;
-}
-.publicidad__3{
-    grid-area: publi3;
 }
 .publicidad__1--1{
     width: 300px;
@@ -127,25 +111,13 @@ body{
     margin: 30px 60px;
 }
 
-@media screen and (max-width:1023px) {
-    .contenedor{
-        display: grid;
-        grid-template-areas: "header header"
-                             "main main"
-                             "publi1 publi2"
-                             "publi3 publi3"
-                             "footer footer";                    
-    }
-}
-
 /* Galeria de imagenes */
-.galeriaimagenes{
-    display: flex;
-    justify-content: center;
-}
 .galeriaimagenes__imagen--img{
     width: 400px;
-    margin: 15px;
+    margin: 1rem;
+}
+.galeriaimagenes__imagen--img:hover{
+    transform: scale(1.5);
 }
 
 /* Quienes somos */
@@ -193,20 +165,6 @@ body{
     margin: 10px;
 }
 
-@media screen and (max-width:1023px) {
-    .quiesom{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "header header"
-                             "imagen1 desc"
-                             "imagen2 imagen3"
-                             "imagen4 imagen5"
-                             "footer footer"; 
-        justify-content: center;
-        justify-items: center;                                                                         
-    }
-}
-
 /* Formulario */
 .formulario{
     display: flex;
@@ -243,4 +201,20 @@ body{
     border-style: ridge;
     border-color: purple;
     background-color: rgb(226, 206, 206);
+}
+
+@media screen and (max-width: 900px){
+    .header__nombre{
+        font-size: 4rem;
+    }
+    body div header nav{
+        font-size: 1rem;
+    }
+    .inicio__parrafo{
+        font-size: 1.3rem;
+        margin: 2rem;
+    }
+    .footer__redes{
+        font-size: 2rem;
+    }
 }

@@ -4,95 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- link CSS -->
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- iconos footer -->
+    <script src="https://kit.fontawesome.com/994041f941.js" crossorigin="anonymous"></script>
     <title>BDP - Galería de imágenes</title>
 </head>
 
 <body>
-    <header class="header">
-        <img class="header__logo" src="../img/bdp.jpg" alt="logo">
-        <h1 class="header__nombre"> Berta Deco Party</h1> 
-        <nav class="header__nav">
-            <ul>
-                <li  class="hader__nav--botones1"> 
-                    <a class="hader__nav--botones2" href="../index.html">
-                        <h3>Inicio</h3>
-                    </a>
-                </li>
-                <li  class="hader__nav--botones1"> 
-                    <a class="hader__nav--botones2" href="nuestrosservicios.html">
-                        <h3>Nuestros servicios</h3>
-                    </a>
-                    <ul class="header__nav--submenu">
-                        <li> Salón </li>
-                        <li> Decos infantiles </li>
-                        <li> Decos para 15 años </li>
-                        <li> Decos para casamiento </li>
-                        <li> Alquiler de Candy bar </li>
-                    </ul>
-                </li>
-                <li  class="hader__nav--botones1"> 
-                   <a class="hader__nav--botones2" href="galeriadeimagenes.html">
-                    <h3>Galería de imágenes</h3>
-                   </a> 
-                </li>
-                <li  class="hader__nav--botones1"> 
-                    <a class="hader__nav--botones2" href="quienessomos.html">
-                        <h3>Quienes somos</h3>
-                    </a>
-                </li>
-                <li  class="hader__nav--botones1"> 
-                    <a class="hader__nav--botones2" href="contacto.html">
-                        <h3>Contacto</h3>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
     <div>
-        <div class="galeriaimagenes">
-            <div class="galeriaimagenes__imagen">
+        <header class="header">
+            <h1 class="header__nombre"> Berta Deco Party</h1>
+            <nav class="navbar navbar-expand-lg ms-auto">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="nuestrosservicios.html">Nuestros servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="galeriadeimagenes.html">Galería de imágenes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="quienessomos.html">Quienes somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                      </li>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="galeriaimagenes row my-5">
+            <div class="galeriaimagenes__imagen col-xl-4 col-lg-6 col-md-12 d-flex justify-content-center">
                 <img class="galeriaimagenes__imagen--img" src="../img/gdi1.jpg" alt="imagen">
             </div>
-            <div class="galeriaimagenes__imagen">
+            <div class="galeriaimagenes__imagen col-xl-4 col-lg-6 col-md-12 d-flex justify-content-center">
                 <img class="galeriaimagenes__imagen--img" src="../img/gdi2.jpg" alt="imagen">
             </div>
-            <div class="galeriaimagenes__imagen">
+            <div class="galeriaimagenes__imagen col-xl-4 col-lg-6 col-md-12 d-flex justify-content-center">
                 <img class="galeriaimagenes__imagen--img" src="../img/gdi3.jpg" alt="imagen">
             </div>
-        </div>
-        <div class="galeriaimagenes">
-            <div class="galeriaimagenes__imagen">
+            <div class="galeriaimagenes__imagen col-xl-4 col-lg-6 col-md-12 d-flex justify-content-center">
                 <img class="galeriaimagenes__imagen--img" src="../img/gdi4.jpg" alt="imagen">
             </div>
-            <div class="galeriaimagenes__imagen">
+            <div class="galeriaimagenes__imagen col-xl-4 col-lg-6 col-md-12 d-flex justify-content-center">
                 <img class="galeriaimagenes__imagen--img" src="../img/gdi5.jpg" alt="imagen">
             </div>
-            <div class="galeriaimagenes__imagen">
+            <div class="galeriaimagenes__imagen col-xl-4 col-lg-6 col-md-12 d-flex justify-content-center">
                 <img class="galeriaimagenes__imagen--img" src="../img/inic.jpg" alt="imagen">
             </div>
         </div>
     </div>
 
     <footer class="footer">
-        <h2 class="footer__seguinos">Seguinos en nuestras redes sociales</h2>
         <div class="footer__redes">
          <a class="footer__redes" href="https://web.whatsapp.com" target="_blank">
-             WhatsApp
+             <i class="fab fa-whatsapp"></i>
          </a>
         </div>
         <div class="footer__redes">
          <a class="footer__redes" href="https://www.instagram.com" target="_blank">
-             Instagram
+             <i class="fab fa-instagram"></i>
          </a>
         </div>
         <div class="footer__redes">
          <a class="footer__redes" href="https://m.facebook.com" target="_blank">
-             Facebook
+             <i class="fab fa-facebook-square"></i>
+         </a>
+        </div>
+        <div class="footer__redes">
+         <a class="footer__redes" href="https://m.facebook.com" target="_blank">
+             <i class="fab fa-facebook-messenger"></i>
          </a>
         </div>
      </footer>
     
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
